@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Proasg-03</display-name>
+  <welcome-file-list>
+
+    <welcome-file>front-page.jsp</welcome-file>
+  </welcome-file-list>
+  
+    <servlet>
+    <description></description>
+    <display-name>Registration_Control</display-name>
+    <servlet-name>Registration_Control</servlet-name>
+    <servlet-class>com.control.Registration_Control</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Registration_Control</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Product_Education_Control</display-name>
+    <servlet-name>Product_Education_Control</servlet-name>
+    <servlet-class>com.control.Product_Education_Control</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Product_Education_Control</servlet-name>
+    <url-pattern>/educationadd</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Product_Electronic_Control</display-name>
+    <servlet-name>Product_Electronic_Control</servlet-name>
+    <servlet-class>com.control.Product_Electronic_Control</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Product_Electronic_Control</servlet-name>
+    <url-pattern>/electronicadd</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Product_Food_Control</display-name>
+    <servlet-name>Product_Food_Control</servlet-name>
+    <servlet-class>com.control.Product_Food_Control</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Product_Food_Control</servlet-name>
+    <url-pattern>/foodadd</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Product_Medical_Control</display-name>
+    <servlet-name>Product_Medical_Control</servlet-name>
+    <servlet-class>com.control.Product_Medical_Control</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Product_Medical_Control</servlet-name>
+    <url-pattern>/medicaladd</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>Order_Electronic_Product</display-name>
+    <servlet-name>Order_Electronic_Product</servlet-name>
+    <servlet-class>com.display.Order_Electronic_Product</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Order_Electronic_Product</servlet-name>
+    <url-pattern>/electronicorder</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
