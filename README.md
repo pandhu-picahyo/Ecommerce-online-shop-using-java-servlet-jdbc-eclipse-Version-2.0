@@ -4,7 +4,8 @@ In this program still meet with multiple error, will work it to find and repair 
 Some detected error :
   1. Navbar at header not showing up
   2. Date and time not showing up
-please contact me if you find other missing data or error
+
+Please contact me if you find other missing data or error
 
 To run this program, first create database: assignment3
 After that run com.create table
