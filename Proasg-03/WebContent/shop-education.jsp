@@ -2,8 +2,8 @@
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
-<%@page import="com.info.A_Food"%>
-<%@page import="com.dao.A_Food_Dao"%>
+<%@page import="com.info.A_Education"%>
+<%@page import="com.dao.A_Education_Dao"%>
 <%
 	String id = request.getParameter("id");
 	String driver = "com.mysql.cj.jdbc.Driver";
@@ -50,7 +50,7 @@ try {
 
 <%@ include file = "header.html" %>
 
-	<form method="get" action="./foodorder">
+	<form method="get" action="./educationorder">
 	<h1>Food Product</h1>
 	
 	<div class="grid-container">
@@ -58,13 +58,13 @@ try {
 		try{
 			connection = DriverManager.getConnection(connectionUrl+database, userid, password);
 			statement=connection.createStatement();
-			String sql ="select * from productfood";
+			String sql ="select * from producteducation";
 			resultSet = statement.executeQuery(sql);
 
 		while(resultSet.next()){
 	%>
 	<div class="grid-item">
-		<img src="Image_Food?id=<%=resultSet.getInt("id") %>" width= "50px" />
+		<img src="Image_Education?id=<%=resultSet.getInt("id") %>" width= "50px" />
 		<h6><%=resultSet.getString("name") %></h6>
 		<h6>$ <%=resultSet.getString("cost") %></h6>
 		<input type="checkbox" name="id" value="<%=resultSet.getInt("id") %>"/>

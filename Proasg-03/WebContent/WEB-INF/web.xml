@@ -71,5 +71,38 @@
     <servlet-name>Order_Electronic_Product</servlet-name>
     <url-pattern>/electronicorder</url-pattern>
   </servlet-mapping>
+
+   <servlet>
+    <description></description>
+    <display-name>Order_Food_Product</display-name>
+    <servlet-name>Order_Food_Product</servlet-name>
+    <servlet-class>com.display.Order_Food_Product</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Order_Food_Product</servlet-name>
+    <url-pattern>/foodorder</url-pattern>
+  </servlet-mapping>
   
+   <servlet>
+    <description></description>
+    <display-name>Order_Education_Product</display-name>
+    <servlet-name>Order_Education_Product</servlet-name>
+    <servlet-class>com.display.Order_Education_Product</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Order_Education_Product</servlet-name>
+    <url-pattern>/educationorder</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>Order_Medical_Product</display-name>
+    <servlet-name>Order_Medical_Product</servlet-name>
+    <servlet-class>com.display.Order_Medical_Product</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Order_Medical_Product</servlet-name>
+    <url-pattern>/medicalorder</url-pattern>
+  </servlet-mapping>
+    
 </web-app>

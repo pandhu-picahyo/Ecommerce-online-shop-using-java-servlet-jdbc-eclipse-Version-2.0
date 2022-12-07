@@ -7,7 +7,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
-public class Order_Electronic_Product extends HttpServlet {
+public class Order_Medical_Product extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
@@ -35,7 +35,7 @@ public class Order_Electronic_Product extends HttpServlet {
 
            float totalCost = 0f;
            for (String id : ids) {
-              sqlStr = "SELECT id, name, cost FROM productelectronic WHERE id = " + id;
+              sqlStr = "SELECT id, name, cost FROM productmedical WHERE id = " + id;
               
               rset = stmt.executeQuery(sqlStr);
 
